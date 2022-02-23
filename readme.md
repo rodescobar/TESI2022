@@ -7,7 +7,18 @@
 - Frameworks
 - PHP e Framworks
 - Download do CodeIgniter 3
+\
 [https://codeigniter.com/download]
+- Alteração no Apache para trabalhar com Hosts Virtuais
+```
+Listem 8080
+
+SeverListem 8080
+
+<VirtualHost *:8080>
+    DocumentRoot c:/wamp/www/codeigniter
+</VirtualHost>
+```
 
 ### Aula 02 - 23/02/2022
 - Criação de tabelas - MySQL
