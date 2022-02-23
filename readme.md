@@ -11,9 +11,9 @@
 [https://codeigniter.com/download]
 - Alteração no Apache para trabalhar com Hosts Virtuais
 ```
-Listem 8080
+Listen 8080
 
-SeverListem 8080
+SeverListen 8080
 
 <VirtualHost *:8080>
     DocumentRoot c:/wamp/www/codeigniter
