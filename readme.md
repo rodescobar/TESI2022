@@ -38,8 +38,11 @@ SeverListen 8080
 
 
 ### Aula 04 - 17/03/2022
-- Criação de tabela consulta veíuclos na base (VIEW)
-- Validação de formulários
-- Criação de formulários (VIEW)
-- Escolha de veículo para aleração
-- JQUERY/AJAX requisição veículo
+- Rollback
+- Apache / Mysql / PHP
+- Portas Windows
+- Framework CodeIgniter
+- Autload e Database (codeigniter/application/config) 
+- Controller
+- Model
+- View

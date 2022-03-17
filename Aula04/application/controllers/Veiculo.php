@@ -3,69 +3,31 @@
     class Veiculo extends CI_Controller {
 
         public function index() {
-            $this->load->model("veiculomodel");
+            $this->load->model("VeiculoModel");
 
-            $teste = $this->veiculomodel->selecionarTodos();
+            $veiculos = $this->VeiculoModel->selecionarTodos();
 
-            var_dump($teste);
+            $talon = array(
+                "lista_veiculos" => $veiculos,
+                "titulo" => "Você está em Marquinhos veiculos",
+                "sucesso" => "Veiculo add com sucesso",
+                "erro" => "sdadasda"
+            );
+
+            $this->load->view("veiculo/index", $talon );
+        }
+
+        public function metodos() {
+            echo "dadasdasdasdasdada";
         }
 
         public function novo() {
-
-            $marca = $_POST['marca'];
-            $modelo = @$_POST['modelo'];
-            $valor = $_POST['valor'];
-            $ativo = $_POST['ativo'];
-            $cor = @$_POST['cor'];
-
-            $data = array(
-                "marca" => $marca,
-                "modelo" => $modelo,
-                "valor" => $valor,
-                "estoque" => ($ativo=="on")?(1):(0),
-                "cor" => $cor
-            );
-
-            $this->load->model("veiculomodel");
-            $this->veiculomodel->inserir($data);
-
+            echo "novo";
         }
 
         public function formNovo() {
-            $this->load->view("veiculo/formNovo");
+            echo "formNovo";
         }
 
     }
-
-    /*
-        <?php echo validation_errors(); ?>
-
-        <?php echo form_open('form'); ?>
-        
-        $this->load->helper(array('form', 'url'));
-        $this->load->library('form_validation');
-
-        $this->form_validation->set_rules('username', 'Username', 'required');
-        $this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]');
-        $this->form_validation->set_rules('password', 'Password', 'required',
-                array('required' => 'You must provide a %s.')
-        );
-        $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required');
-        $this->form_validation->set_rules('passconf', 'Password Confirmation', 'required|matches[password]');
-        $this->form_validation->set_rules('email', 'Email', 'required');
-
-        if ($this->form_validation->run() == FALSE)
-
-
-        ou 
-
-        $config = array(
-        array(
-                'field' => 'username',
-                'label' => 'Username',
-                'rules' => 'required'
-        ),
-        $this->form_validation->set_rules($config);
-    */
-
 ?>
