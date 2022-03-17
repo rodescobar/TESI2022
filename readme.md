@@ -46,3 +46,10 @@ SeverListen 8080
 - Controller
 - Model
 - View
+
+## Aula 05 - 23/03/2022
+- View recebendo lista de veiculos
+- Selecionando veículo 
+- Model (seleção de veículo por nome, modelo, id)
+- Criação de veículo com form_validadtion
+
