@@ -35,4 +35,6 @@ Deverá existir uma view que apresentará os produtos com o Layout de tabela na 
 ## Entrega
 A entrega everá ser feita por e-mail: rodrigo.noescobar@gmail.com até às 22h30 do dia 23/03/2022 (hoje).
 
-Compacte a pasta e anexe o arquivo no e-mail
+Compacte a pasta e anexe o arquivo no e-mail.
+
+Valendo 1,00 ponto na média
