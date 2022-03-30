@@ -9,8 +9,9 @@
             return $retorno->result();
         }
 
-        public function selecionarWhere( $clausula ) {
-            //SELECT * FROM veiculo WHERE modelo LIKE '%Fusca%'
+        public function buscarId( $id ) {
+            $retorno = $this->db->query( "SELECT * FROM veiculo WHERE id=" . $id );
+            return $retorno->result();
         }
 
         public function inserir( $data ) {

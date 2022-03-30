@@ -9,15 +9,11 @@
             $tabela = "";
 
             foreach($veiculos as $item ) {
-                /*
-                    public function alterar() {
-                        echo "Chegou na alteração de veículo";
-                    }
-                */
+                //GET
                 $tabela = $tabela . "
                     <tr>
                         <td style='cursor: pointer'>
-                            <a href='/index.php/veiculo/alterar'>
+                            <a href='/index.php/veiculo/alterar?codigo=" . $item->id . "'>
                                 ✏️
                             </a>
                         </td>
@@ -45,7 +41,20 @@
 
         //Alteração de veículo
         public function alterar() {
-            echo "Chegou na alteração de veículo";
+            $this->load->model("VeiculoModel");
+
+            $id = $_GET["codigo"];
+
+            $retorno = $this->VeiculoModel->buscarId( $id );
+            
+            $data = array(
+                "titulo"=>"Alteração de veículos",
+                "veiculo"=>$retorno[0]
+            );
+
+            $this->load->view("veiculo/formAlterar", $data);
+
+
         }
 
         public function formNovo() {
