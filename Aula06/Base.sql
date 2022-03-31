@@ -7,5 +7,9 @@ CREATE TABLE veiculo(
     ano INT,
     cor VARCHAR( 20 ) ,
     valor DECIMAL( 10, 2 ) ,
-    estoque INT
+    estoque INT,
+    imagem VARCHAR(100)
 );
+
+--Banco
+--https://file.io/fKBZ2RMROgby

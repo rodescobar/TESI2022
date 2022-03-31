@@ -7,9 +7,9 @@
     <title>Cadastro de um novo veículo</title>
 </head>
 <body>
-    <form method="POST" action="http://127.0.0.1/codeigniter/index.php/veiculo/novo" onSubmit="Testar()">
+    <form method="POST" action="/index.php/veiculo/salvarnovo">
         <label>Modelo</label>
-        <input type="text" name="modelo"/>
+        <input type="text" name="modelo" required/>
         <br />
 
         <label>Marca</label>
@@ -21,17 +21,19 @@
         <br />
 
         <label>Ano</label>
-        <input type="text" name="ano"/>
+        <input type="text" name="ano" required/>
         <br />
 
         <label>Valor</label>
-        <input type="text" name="valor"/>
+        <input type="text" name="valor" required/>
         <br />
 
-        <label>Ativo</label>
-        <input type="checkbox" name="ativo"/>
+        <label>Imagem</label>
+        <input type="text" name="imagem" required/>
+        <br />
         <br />
         <input type="submit" value="Salvar" />
+        <a href="/index.php/veiculo">Volta/Cancelar</a>
 
     </form>
 </body>

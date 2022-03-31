@@ -7,7 +7,9 @@
     <title><?php echo $titulo; ?></title>
 </head>
 <body>
-    <form method="POST" action="">
+    <form method="POST" action="/index.php/veiculo/salvaralteracao">
+        <input type="hidden" name="id" value="<?php echo $veiculo->id; ?>"/>
+
         <label>Modelo</label>
         <input type="text" name="modelo" value="<?php echo $veiculo->modelo; ?>"/>
         <br />
@@ -34,6 +36,7 @@
         
         <br />
         <input type="submit" value="Salvar" />
+        <a href='/index.php/veiculo'>Voltar/Cancelar</a>
 
     </form>
 </body>

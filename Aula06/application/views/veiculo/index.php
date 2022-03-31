@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Listagem de veículos da loja</h1>
-
+    <a 
+        href="/index.php/veiculo/formnovo"
+        style="text-decoration: none; 
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px"
+    >
+        Novo
+    </a>
     <table border="1" >
         <tr>
             <td></td>
