@@ -53,11 +53,16 @@ SeverListen 8080
 - Model (seleção de veículo por nome, modelo, id)
 - Criação de veículo com form_validadtion
 
-## Aula 06 - 30/03/2022
+## Aula 05.1 - 30/03/2022
 - Término de CRUD
 
-## Aula 07 - 06/04/2022
+## Aula 06 - 06/04/2022
 - Login
 - Session
 - Alteração no CRUD para somente usuários logados
 - Se der, template
+
+## Aula 07 - 13/04/2022
+- Email
+- Template
+- Form validation (Se der)
