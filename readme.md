@@ -63,6 +63,14 @@ SeverListen 8080
 - Se der, template
 
 ## Aula 07 - 13/04/2022
-- Email
 - Template
+
+## Aula 08 - 21/04/2022
+- Email
 - Form validation (Se der)
+
+
+## Template no CI
+```
+https://jeromejaglale.com/doc/php/codeigniter_template
+```
