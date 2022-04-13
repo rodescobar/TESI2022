@@ -70,7 +70,10 @@ SeverListen 8080
 - Form validation (Se der)
 
 
-## Template no CI
+## Templates
 ```
 https://jeromejaglale.com/doc/php/codeigniter_template
+
+https://bootstrapmade.com/demo/NiceAdmin/
+
 ```
