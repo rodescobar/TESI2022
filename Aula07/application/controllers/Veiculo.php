@@ -5,13 +5,9 @@
         public function __construct() {
             parent::__construct();
 
-            var_dump($_SERVER);
-            /*
             if (    !isset($_SESSION["tesi2022"]) ) {
-                echo "você precisa estar logado";
                 header("location: /index.php/login");
             }
-            */
         }
 
         public function index() {
@@ -58,7 +54,7 @@
                 "erro" => "sdadasda"
             );
 
-            $this->load->view("veiculo/index", $variavel );
+            $this->template->load("templates/adminTemp", "veiculo/index", $variavel );
         }
 
         //Alteração de veículo
@@ -105,7 +101,7 @@
         
         //Criar veiculo
         public function formNovo() {
-            $this->load->view("/veiculo/formnovo");
+            $this->template->load("templates/adminTemp","/veiculo/formnovo");
         }
 
         //Salvar novo veiculo

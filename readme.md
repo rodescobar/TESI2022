@@ -65,9 +65,10 @@ SeverListen 8080
 ## Aula 07 - 13/04/2022
 - Template
 
-## Aula 08 - 21/04/2022
-- Email
+## Aula 08 - 20/04/2022
 - Form validation (Se der)
+- Mensagens amigaveis
+- Email
 
 
 ## Templates

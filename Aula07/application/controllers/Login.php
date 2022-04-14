@@ -64,7 +64,7 @@
 
         //Tela de login
         public function Index() {
-            $this->load->view("login/login");
+            $this->template->load("templates/adminLogin","login/login");
         }
 
         public function ValidaLogin() {
@@ -83,8 +83,7 @@
                     "admin" => true
                 );
 
-                var_dump($_SESSION);
-                echo "Login executado com sucesso.";
+                header("location: /index.php");
             }
             else {
                 echo "Usuário e/ou sneha inválidos";
