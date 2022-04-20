@@ -101,6 +101,11 @@
         
         //Criar veiculo
         public function formNovo() {
+            $this->load->model("CorModel");
+            $cores = $this->CorModel->selecionarTodos();
+
+            var_dump( $cores );
+
             $this->template->load("templates/adminTemp","/veiculo/formnovo");
         }
 
