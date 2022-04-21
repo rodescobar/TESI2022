@@ -37,7 +37,7 @@
                 $tabela = $tabela . "
                         <td>" . $item->marca ."</td>
                         <td>" . $item->modelo ."</td>
-                        <td>" . $item->cor ."</td>
+                        <td>" . $item->cor_nome ."</td>
                         <td>" . $item->valor ."</td>
                         <td>
                             <img src='" . $item->imagem . "' style='width:150px' />
@@ -67,10 +67,11 @@
             
             $data = array(
                 "titulo"=>"Alteração de veículos",
-                "veiculo"=>$retorno[0]
+                "veiculo"=>$retorno[0],
+                "opcoes"=>$this->montaComboCores($retorno[0]->cor) //3, 4, 5
             );
 
-            $this->load->view("veiculo/formAlterar", $data);
+            $this->template->load("templates/adminTemp", "veiculo/formAlterar", $data);
 
 
         }
@@ -101,16 +102,42 @@
         
         //Criar veiculo
         public function formNovo() {
+
+            $opcao = $this->montaComboCores( 0 );
+            
+            $data = array(
+                'opcoes' => $opcao
+            );
+
+            $this->template->load("templates/adminTemp","/veiculo/formnovo", $data);
+        }
+
+        private function montaComboCores( $idCor ) {
             $this->load->model("CorModel");
             $cores = $this->CorModel->selecionarTodos();
 
-            var_dump( $cores );
+            $option = "";
+            foreach($cores as $linha) {
+                $selecionado = "";
 
-            $this->template->load("templates/adminTemp","/veiculo/formnovo");
+                if ( $idCor == $linha->id )
+                    $selecionado = "selected";
+
+
+                $option .= "<option 
+                                value='" . $linha->id . "'
+                                " . $selecionado . "
+                            >" 
+                                . $linha->cor . 
+                            "</option>"; 
+            }
+
+            return $option;
         }
 
         //Salvar novo veiculo
         public function salvarnovo() {
+            
             $this->load->model("VeiculoModel");
 
             $marca = $_POST["marca"];
@@ -122,7 +149,7 @@
 
             $retorno = $this->VeiculoModel->buscarModelo( $modelo );
 
-            //var_dump( $retorno );
+            //var_dump( $_POST );
 
             if ( $retorno[0]->total > 0 ) {
                 echo "Não pode incluir, já existe um total de " . $retorno[0]->total;

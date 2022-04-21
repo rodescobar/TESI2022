@@ -19,7 +19,10 @@
         <br />
 
         <label>Cor</label>
-        <input type="text" name="cor" id="cor" value="<?php echo $veiculo->cor; ?>" required/>
+        <select name="cor" required>
+            <option value="">Escolha a cor</option>
+            <?php echo $opcoes; ?>
+        </select>
         <br />
 
         <label>Ano</label>

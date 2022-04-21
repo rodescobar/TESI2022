@@ -3,7 +3,15 @@
     class VeiculoModel extends CI_Model {
 
         public function selecionarTodos() {
-            $retorno = $this->db->query("SELECT * FROM veiculo");
+            $retorno = $this->db->query("
+                                    SELECT
+                                        V.*,
+                                        C.cor AS cor_nome
+                                    FROM veiculo AS V
+                                    INNER JOIN cor AS C
+                                        ON C.id = V.cor            
+                                    ");
+                                    
             return $retorno->result();
         }
 

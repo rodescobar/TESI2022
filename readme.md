@@ -66,10 +66,18 @@ SeverListen 8080
 - Template
 
 ## Aula 08 - 20/04/2022
-- Form validation (Se der)
-- Mensagens amigaveis
-- Email
+- JOIN de tabelas
+- Adição de SELECT itens nos formularios de Novo/Alteração
+- Exercício
+ - Criar o CRUD para a tabela CORES.
 
+## Aula 09 / 10 - 27/04/2022 e 04/05/2022
+- Trabalho a padaria do Barba
+- Tabelas com relacionamento
+- Templates
+- Login
+- Sessão
+- Adicional: Template para a página inicial.
 
 ## Templates
 ```
@@ -77,4 +85,12 @@ https://jeromejaglale.com/doc/php/codeigniter_template
 
 https://bootstrapmade.com/demo/NiceAdmin/
 
+```
+
+## CRUD
+```
+C -> create
+R -> read
+U -> update
+D -> delete
 ```
