@@ -79,6 +79,12 @@ SeverListen 8080
 - Sessão
 - Adicional: Template para a página inicial.
 
+## Aula 11 - 11/05/2022
+- Criando VPS (google console)
+- Criando servidor Web com apache
+- Criando servidor MySQL e liberando acesso externo
+- PDF com conteúdo
+
 ## Templates
 ```
 https://jeromejaglale.com/doc/php/codeigniter_template
