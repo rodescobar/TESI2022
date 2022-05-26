@@ -85,6 +85,24 @@ SeverListen 8080
 - Criando servidor MySQL e liberando acesso externo
 - PDF com conteúdo
 
+## Aula 12 - 18/05/2022
+- Instalando PHP na VPS
+- WinSCP
+- Copiando arquivos pelo WinSCP
+- Configurações na aplicação para execuçãona VPS
+- NoIP
+- Configurando NoIP
+
+## Aula 13 - 25/05/2022
+- Heroku
+- Criando aplicação de teste PHP para banco remoto
+- Enviando aplicação ao Heroku
+- Criando um servidor MySQL no site (remotemysql.com)[remotemysql.com]
+
+## Aula 13 - 25/05/2022 - Exercício
+- Exercício
+
+
 ## Templates
 ```
 https://jeromejaglale.com/doc/php/codeigniter_template
