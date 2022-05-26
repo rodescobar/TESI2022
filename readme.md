@@ -99,7 +99,7 @@ SeverListen 8080
 - Enviando aplicação ao Heroku
 - Criando um servidor MySQL no site [remotemysql.com](remotemysql.com)
 
-### Primeiro envio ao heroku
+**Primeiro envio ao Heroku**
 ```
 git init
 heroku login
@@ -109,14 +109,14 @@ git commit -m "Mensagem"
 git push heroku master
 ```
 
-### Enviando alterações
+**Enviando alterações**
 ```
 git add .
 git commit -m "Mensagem"
 git push heroku master
 ```
 
-### Logs no heroku
+**Logs no heroku**
 ```
 heroku logs --tail
 ```
