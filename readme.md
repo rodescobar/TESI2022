@@ -94,10 +94,32 @@ SeverListen 8080
 - Configurando NoIP
 
 ## Aula 13 - 25/05/2022
-- Heroku
+- (Heroku)[heroku.com]
 - Criando aplicação de teste PHP para banco remoto
 - Enviando aplicação ao Heroku
 - Criando um servidor MySQL no site (remotemysql.com)[remotemysql.com]
+
+- Primeiro envio ao heroku
+```
+git init
+heroku login
+git heroku:remote -a projeto
+git add .
+git commit -m "Mensagem"
+git push heroku master
+```
+
+- Enviando alterações
+```
+git add .
+git commit -m "Mensagem"
+git push heroku master
+```
+
+- Logs no heroku
+```
+heroku logs --tail
+```
 
 ## Aula 13 - 25/05/2022 - Exercício
 - Exercício
