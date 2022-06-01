@@ -124,6 +124,8 @@ heroku logs --tail
 ## Aula 13 - 25/05/2022 - Exercício
 - Exercício
 
+## Aula 14 - 01/06/2022 
+- Jogo Salve a Terra
 
 ## Templates
 ```
