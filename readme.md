@@ -126,6 +126,17 @@ heroku logs --tail
 
 ## Aula 14 - 01/06/2022 
 - Jogo Salve a Terra
+- Entendendo o CSS
+- Entendendo o JavaScript
+- Movimenta Player
+- Movimenta Cenário 
+- Movimenta Tiro Player
+
+## Aula 15 - 08/06/2022
+- Jogo Salve a terra
+- Inimigos
+- Pontuação
+- Vida
 
 ## Templates
 ```
