@@ -1,0 +1,154 @@
+
+body {
+	margin: 0px;
+	background: url("../images/fundo.gif");
+}
+
+#fundo {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#area_jogo {
+    width: 680px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    background: url("../images/fundo.png");
+    background-position: -1500px;
+}
+
+#player_tiro {
+    width: 41px;
+    height: 26px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: url("../images/tiro.png");
+}
+
+#player {
+    width: 110px;
+    height: 57px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+
+    background: url("../images/jogador.png");
+
+    animation: move_player .8s steps(7) infinite;
+    -o-animation: move_player .8s steps(7) infinite;
+    -ms-animation: move_player .8s steps(7) infinite;
+    -webkit-animation: move_player .8s steps(7) infinite;
+    -moz-animation:  move_player .8s steps(7) infinite;
+}
+
+#nave {
+	width: 51px !important;
+	height: 48px !important;
+    top: 0px;
+    left: 630px;
+    z-index: 5;
+    position: absolute;
+	background-image: url("../images/inimigo.png");
+
+	animation:p_nave 2s steps(12) infinite;
+       -webkit-animation: p_nave 2s steps(12) infinite;
+       -moz-animation: p_nave 2s steps(12) infinite;
+       -ms-animation: p_nave 2s steps(12) infinite;
+       -o-animation: p_nave 2s steps(12) infinite;
+}
+
+/* tiros */
+#nave_tiro {
+	width: 34px;
+	height: 47px;
+    left: 630px;
+	position: absolute;
+	background-image: url("../images/inimigo_tiro.png");
+	animation:p_ini_tiro 0.6s steps(5) ;
+
+       -webkit-animation: p_ini_tiro 0.6s steps(5) infinite;
+       -moz-animation: p_ini_tiro 0.6s steps(5) infinite;
+       -ms-animation: p_ini_tiro 0.6s steps(5) infinite;
+       -o-animation: p_ini_tiro 0.6s steps(5) infinite;	
+}
+
+
+@keyframes p_ini_tiro {
+	from {background-position:0px;}
+	to {background-position:-166px;}
+}
+
+@-webkit-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+@-moz-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+@-ms-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+@-o-keyframes p_ini_tiro {
+   from { background-position:0px; }
+     to { background-position: -166px; }
+}
+
+
+@keyframes move_player {
+    from { background-position: 0x; }
+    to { background-position: -763px; }
+}
+
+@-o-keyframes move_player {
+    from { background-position: 0x; }
+    to { background-position: -763px; }
+}
+
+@-ms-keyframes move_player {
+    from { background-position: 0x; }
+    to { background-position: -763px; }
+}
+
+@-webkit-keyframes move_player {
+    from { background-position: 0x; }
+    to { background-position: -763px; }
+}
+
+@-moz-keyframes move_player {
+    from { background-position: 0x; }
+    to { background-position: -763px; }
+}
+
+@keyframes p_nave {
+	from {background-position:0px;}
+	to {background-position:-599px;}
+}
+
+@-webkit-keyframes p_nave {
+	from {background-position:0px;}
+	to {background-position:-599px;}
+}
+
+@-moz-keyframes p_nave {
+	from {background-position:0px;}
+	to {background-position:-599px;}
+}
+
+@-ms-keyframes p_nave {
+	from {background-position:0px;}
+	to {background-position:-599px;}
+}
+
+@-o-keyframes p_nave {
+	from {background-position:0px;}
+	to {background-position:-599px;}
+}
